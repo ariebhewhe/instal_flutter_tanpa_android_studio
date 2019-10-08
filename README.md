@@ -21,13 +21,20 @@ Catatan untuk melakukan instal tanpa menggunakan android studio yang memiliki Ra
  
  - Selanjutnya silahkan download OpenJDK di <a href="https://github.com/AdoptOpenJDK/openjdk8-binaries/releases">halaman ini</a>, dan pilih yang berekstensi zip. sesuaikan dengan sistem operasi yang digunakan, saya menggunakan versi jdk8u212-b03 . setelah di download jangan lupa untuk mengekstrak ke folder Android yang sudah kita punya sebelumnya dan rename nama folder dari jdk8u212-b03 menjadi openjdk. totalnya sekarang kita punya 3 folder yaitu flutter, tools dan openjdk.
  
- - sampai sini kita harus menge-set Environment Variable dan Path, untuk windows silahkan buka command prompt dan ketikan   command perbaris.<code>  setx JAVA_HOME “C:\Android\openjdk” setx ANDROID_HOME “C:\Android” setx ANDROID_SDK_ROOT “C:\Android\tools” setx path “%path%;”C:\Android\sdk;C:\Android\tools\bin;C:\Android\flutter\bin” </code>
-- Buka terminal (Command Prompt) di C:/Android/tools/bin lalu ketikan beberapa perintah berikut. <code> 
+ - sampai sini kita harus menge-set Environment Variable dan Path, untuk windows silahkan buka command prompt dan ketikan   command perbaris.
+ <pre>  
+ setx JAVA_HOME “C:\Android\openjdk” 
+ setx ANDROID_HOME “C:\Android” 
+ setx ANDROID_SDK_ROOT “C:\Android\tools”
+ setx path “%path%;”C:\Android\sdk;C:\Android\tools\bin;C:\Android\flutter\bin” 
+ </pre>
+- Buka terminal (Command Prompt) di C:/Android/tools/bin lalu ketikan beberapa perintah berikut. 
+<pre> 
   sdkmanager “system-images;android-28;default;x86_64”
   sdkmanager “platform-tools”
   sdkmanager “build-tools;28.0.3”
   sdkmanager “platforms;android-28”
-  </code>
+  </pre>
   untuk pengguna Mac silahkan jalankan dengan single qoute (petik satu) seperti berikut.
   <code> sdkmanager ‘system-images;android-28;default;x86_64’ </code>
   untuk SDK sendiri, Flutter selalu memerlukan Android SDK yang terbaru. jadi silahkan update sdk dengan command :

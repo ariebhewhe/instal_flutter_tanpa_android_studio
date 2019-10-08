@@ -36,9 +36,11 @@ Catatan untuk melakukan instal tanpa menggunakan android studio yang memiliki Ra
   sdkmanager “platforms;android-28”
   </pre>
   untuk pengguna Mac silahkan jalankan dengan single qoute (petik satu) seperti berikut.
-  <code> sdkmanager ‘system-images;android-28;default;x86_64’ </code>
+  
+  <pre> sdkmanager ‘system-images;android-28;default;x86_64’ </pre>
   untuk SDK sendiri, Flutter selalu memerlukan Android SDK yang terbaru. jadi silahkan update sdk dengan command :
-  <code> sdkmanager —-update </code>
+  
+  <pre> sdkmanager —-update </pre>
   Jangan lupa untuk menjalankan syntax accept licenses nya 
   <code> flutter doctor --android-licenses </code>
  -  Selanjutnya install Visual Studio Code dan ekstension flutter serta dart nya. 

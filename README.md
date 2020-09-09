@@ -27,7 +27,7 @@ Catatan untuk melakukan instal tanpa menggunakan android studio yang memiliki Ra
  setx JAVA_HOME “C:\Android\openjdk”  // Jika blm install JDK Java
  setx ANDROID_HOME “C:\Android” 
  setx ANDROID_SDK_ROOT “C:\Android\tools”
- setx path “%path%;”C:\Android\sdk;C:\Android\tools\bin;C:\Android\flutter\bin” 
+ setx path “%path%;”C:\Android\sdk;C:\Android\tools\bin;C:\Android\flutter\bin;C:\Android\flutter\bin\cache\dart-sdk\bin” 
  </pre>
  cek di path nanti ada pembahan data di atas 
  

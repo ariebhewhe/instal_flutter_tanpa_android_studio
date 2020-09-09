@@ -12,23 +12,27 @@ Catatan untuk melakukan instal tanpa menggunakan android studio yang memiliki Ra
 
 ## Langkah mudah instalasi Flutter (khusus untuk yang spesifikasi ringan ) : 
 - Download SDK Flutter.
-  Silahkan kunjungi halaman download disini, dan sesuaikan dengan sistem operasi teman teman. saat tulisan ini dibuat flutter dalam    versi 1.2.1 Stable
+  Silahkan kunjungi halaman download <a href="https://flutter.dev/docs/get-started/install">disini</a>, dan sesuaikan dengan sistem operasi teman teman. saat tulisan ini dibuat flutter dalam    versi 1.2.1 Stable
  
  - Selanjutnya silahkan download Command Line Tools Only di <a href="https://developer.android.com/studio/#command-tools" > halaman ini </a>, penampakan nya seperti berikut, silahkan download sesuai sistem operasi yang digunakan.
  <img src="https://miro.medium.com/max/1347/1*PKF7u_7UwrmyUlBqX19iFw.png" />
  
  - Silahkan Ekstrak kedua file tersebut dan letakkan di C:\Android untuk windows dan untuk sistem operasi yang lainnya bisa menaruh di root dan buat folder Android. Maka hasilnya akan ada 2 folder yaitu folder flutter dan tools.
  
- - Selanjutnya silahkan download OpenJDK di <a href="https://github.com/AdoptOpenJDK/openjdk8-binaries/releases">halaman ini</a>, dan pilih yang berekstensi zip. sesuaikan dengan sistem operasi yang digunakan, saya menggunakan versi jdk8u212-b03 . setelah di download jangan lupa untuk mengekstrak ke folder Android yang sudah kita punya sebelumnya dan rename nama folder dari jdk8u212-b03 menjadi openjdk. totalnya sekarang kita punya 3 folder yaitu flutter, tools dan openjdk.
+ - Selanjutnya silahkan download OpenJDK di <a href="https://github.com/AdoptOpenJDK/openjdk8-binaries/releases">halaman ini</a>, dan pilih yang berekstensi zip. sesuaikan dengan sistem operasi yang digunakan, saya menggunakan versi jdk8u212-b03 . setelah di download jangan lupa untuk mengekstrak ke folder Android yang sudah kita punya sebelumnya dan rename nama folder dari jdk8u212-b03 menjadi openjdk. totalnya sekarang kita punya 3 folder yaitu flutter, tools dan openjdk. (<b>NOTE : Khusus yang belum install jdk (java) jika sudah jdk jangan dikerjakan </b>
  
  - sampai sini kita harus menge-set Environment Variable dan Path, untuk windows silahkan buka command prompt dan ketikan   command perbaris.
+ Note : buka CMD dan di ketik one by one 
  <pre>  
- setx JAVA_HOME “C:\Android\openjdk” 
+ setx JAVA_HOME “C:\Android\openjdk”  // Jika blm install JDK Java
  setx ANDROID_HOME “C:\Android” 
  setx ANDROID_SDK_ROOT “C:\Android\tools”
  setx path “%path%;”C:\Android\sdk;C:\Android\tools\bin;C:\Android\flutter\bin” 
  </pre>
+ cek di path nanti ada pembahan data di atas 
+ 
 - Buka terminal (Command Prompt) di C:/Android/tools/bin lalu ketikan beberapa perintah berikut. 
+ Note : buka CMD dan di ketik one by one 
 <pre> 
   sdkmanager “system-images;android-28;default;x86_64”
   sdkmanager “platform-tools”
